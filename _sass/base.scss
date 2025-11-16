@@ -6,37 +6,37 @@
 }
 
 :root {
-  --font-stack:"JetBrains Mono", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
-  --font-stack-code:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --color-background:#f9f9f9;
-  --color-text:#363636;
-  --color-text-muted:#888;
-  --color-link:#0076d1;
-  --color-link-alt:#0d96ff;
-  --color-redlink:#d10000;
-  --color-nav:#efefef;
-  --color-nav-active:#e8e8e8;
-  --color-code:#e8e8e8;
-  --color-code-name:#e45649;
-  --color-code-string:#50a14f;
-  --color-code-function:#4078f2;
-  --color-code-keyword:#a626a4;
-  --color-code-constant:#986801;
-  --color-code-attribute:#b76b01;
-  --color-code-builtin:#cb7701;
-  --color-code-operator:#0184bc;
-  --color-code-comment:#727272;
-  --color-hr:#d8d8d8;
-  --color-table-stripe:#e8e8e8;
-  --color-tip:#e7fdb8;
-  --color-tip-accent:#5ac54f;
-  --color-note:#cffeff;
-  --color-note-accent:#0098dc;
-  --color-caution:#fff4a5;
-  --color-caution-accent:#ffc825;
-  --color-version:#ebb8fd;
-  --color-version-accent:#8d54a1;
-  --color-selection:#ddd
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-stack-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-background: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b7280;
+  --color-link: #2563eb;
+  --color-link-alt: #3b82f6;
+  --color-redlink: #dc2626;
+  --color-nav: #ffffff;
+  --color-nav-active: #f3f4f6;
+  --color-code: #f3f4f6;
+  --color-code-name: #e45649;
+  --color-code-string: #50a14f;
+  --color-code-function: #4078f2;
+  --color-code-keyword: #a626a4;
+  --color-code-constant: #986801;
+  --color-code-attribute: #b76b01;
+  --color-code-builtin: #cb7701;
+  --color-code-operator: #0184bc;
+  --color-code-comment: #727272;
+  --color-hr: #e5e7eb;
+  --color-table-stripe: #f9fafb;
+  --color-tip: #ecfdf5;
+  --color-tip-accent: #10b981;
+  --color-note: #eff6ff;
+  --color-note-accent: #3b82f6;
+  --color-caution: #fef3c7;
+  --color-caution-accent: #f59e0b;
+  --color-version: #f3e8ff;
+  --color-version-accent: #a855f7;
+  --color-selection: #dbeafe;
 }
 
 html {
@@ -44,67 +44,57 @@ html {
 }
 
 body {
-  margin:auto;
-  /*max-width:1000px;*/
-  padding:20px;
-  background-color:var(--color-background);
-  font-family:var(--font-body, var(--font-stack));
-  line-height:1.4;
-  color:var(--color-text)
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  background-color: var(--color-background);
+  font-family: var(--font-body, var(--font-stack));
+  line-height: 1.6;
+  color: var(--color-text);
 }
 
 .wrapper-content {
-  width:calc(100% - 250px);
-  padding-left:15px
-}
-
-.wrapper-nav {
-  flex-direction:column;
-  display:flex;
-  width:250px;
-  height:min-content;
-  background-color:var(--color-nav)
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
 main {
-  margin-bottom:4rem
+  margin-bottom: 4rem;
 }
 
 footer {
-  display:flex;
-  color:var(--color-text-muted)
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-hr);
 }
 
 #footer_right {
-  margin-left:auto
+  margin-left: auto;
 }
 
-@media (min-width:960px) {
+@media (min-width: 960px) {
   html {
-    margin-left:calc(100vw - 100%)
+    margin-left: calc(100vw - 100%);
   }
 }
 
-@media (min-width:769px) {
+@media (max-width: 768px) {
   .wrapper-content {
-    position:relative;
-    left:250px
+    padding: 2rem 1.5rem;
   }
-  .wrapper-nav {
-    position:fixed;
-    max-height:calc(100% - 40px)
-  }
-}
 
-@media (max-width:768px) {
-  body {
-    margin:0 auto;
-    padding:0
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
   }
-  .wrapper {
-    width:100%
-  }
-  .wrapper-content {
-    padding:15px
+
+  #footer_right {
+    margin-left: 0;
   }
 }

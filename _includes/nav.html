@@ -4,78 +4,28 @@
 {%- assign home = "/" -%}
 {%- endif -%}
 
-<div class="wrapper wrapper-nav">
-  <!-- top section -->
-  <input type="checkbox" id="invis"></input>
-  <div id="nav_top" style="background-color: var(--color-background);">
-    <a id="site_title" href="{{ home | absolute_url }}"><img style="max-height: 40px;" src="{{ site.small_logo_path }}" style="width:205px"></a>
-    <label for="invis" id="toggle">
+<nav class="top-nav">
+  <div class="nav-container">
+    <input type="checkbox" id="nav-toggle"></input>
+    <label for="nav-toggle" class="nav-hamburger">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="3" y1="12" x2="21" y2="12"></line>
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
     </label>
-  </div>
 
-  <!-- main section -->
-  <div id="nav_content">
-    <nav>
-      <ul>
+    <a class="nav-logo" href="{{ home | absolute_url }}">
+      <img src="{{ site.small_logo_path }}" alt="{{ site.title }}">
+    </a>
+
+    <div class="nav-menu">
       {%- assign titled_pages = site.html_pages | where_exp: "item", "item.title != nil" | where_exp: "item", "item.title != 404" -%}
+      {%- assign nav_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
 
-      {%- if site.enable_versions == true -%}
-      {%- assign versions_map = titled_pages | map: "version" | uniq | compact -%}
-      {%- assign same_titled_pages = titled_pages | where_exp: "item", "item.title == page.title" -%}
-      <!-- restrict the nav to pages which share the same version as the page we're on -->
-      {%- assign titled_pages = titled_pages | where_exp: "item", "item.version != nil" | where_exp: "item", "item.version == page.version" -%}
-      {%- endif -%}
-
-      {%- if site.nav_categories -%}
-      <!-- category code -->
-      {%- for category in site.nav_categories -%}
-      {%- assign same_category_pages = titled_pages | where_exp: "item", "item.category == category" | sort: "nav_order" -%}
-      {%- if same_category_pages.size != 0 -%}
-      <li class="category">{{ category }}</li/>
-      {%- for node in same_category_pages -%}
-      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}" style="padding-left: {{node.indent | plus:1 | times:1}}rem;">{{ node.title }}</a></li>
+      {%- for node in nav_pages -%}
+      <a href="{{ node.url | absolute_url }}" class="nav-link {% if node.title == page.title %}active{% endif %}">{{ node.title }}</a>
       {%- endfor -%}
-      {%- endif -%}
-      {%- endfor -%}
-      {%- else -%}
-      <!-- non-category code -->
-      {%- assign numeric_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
-      {%- assign alphabetic_pages = titled_pages | where_exp: "item", "item.nav_order == nil" | sort: "title" -%}
-
-      {%- for node in numeric_pages -%}
-      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}" style="padding-left: {{node.indent | plus:1 | times:1}}rem;">{{ node.title }}</a></li>
-      {%- endfor -%}
-      </ul>
-      {%- if alphabetic_pages.size != 0 -%}
-      <hr>
-      <ul>
-      {%- for node in alphabetic_pages -%}
-      <li class="{% if node.title == page.title %}active{% endif %}"><a href="{{ node.url | absolute_url }}" style="padding-left: {{node.indent | plus:1 | times:1}}rem;">{{ node.title }}</a></li>
-      {%- endfor -%}
-      {%- endif -%}
-
-      {%- endif -%}
-      </ul>
-    </nav>
-
-    <!-- bottom section -->
-    <!-- creates links to all versions of the current page -->
-    {%- if site.enable_versions == true and page.title != 404 -%}
-    <p id="versions">
-      {%- for version in versions_map -%}
-      {%- assign match = same_titled_pages | where_exp: "item", "item.version == version" | first -%}
-      {%- if match == nil -%}
-      <a class="redlink" title="page does not exist">{{ version }}</a>
-      {%- else -%}
-      <a href="{{ match.url | absolute_url }}">{{ version }}</a>
-      {%- endif -%}
-      {%- endfor -%}
-    </p>
-    {%- endif -%}
+    </div>
   </div>
-</div>
+</nav>
