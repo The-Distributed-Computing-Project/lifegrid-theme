@@ -28,13 +28,16 @@
   justify-content: center;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
 
   img {
-    max-height: 45px;
+    max-height: 48px;
     height: auto;
     transition: all 0.3s ease;
     filter: brightness(1.2);
+    display: block;
   }
 
   &:hover img {
@@ -53,11 +56,12 @@
 .nav-link {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
+  letter-spacing: -0.01em;
 
   &::before {
     content: '';
