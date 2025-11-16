@@ -127,19 +127,6 @@ main > * {
   }
 }
 
-footer {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-  color: var(--color-text-muted);
-  border-top: 1px solid var(--color-hr);
-  font-size: 0.9rem;
-}
-
-#footer_right {
-  margin-left: auto;
-}
 
 @media (max-width: 768px) {
   .wrapper-content {
@@ -152,15 +139,5 @@ footer {
 
   main > p:first-of-type {
     font-size: 1.1rem;
-  }
-
-  footer {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem;
-  }
-
-  #footer_right {
-    margin-left: 0;
   }
 }
