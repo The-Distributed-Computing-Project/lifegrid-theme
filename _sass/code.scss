@@ -1,28 +1,48 @@
 pre {
-  overflow:auto;
-  margin:0 0 1rem;
-  border-radius:6px;
-  padding:1rem;
-  background-color:var(--color-code);
-  font-size:0.875em;
-  white-space:pre
+  overflow: auto;
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: var(--color-code);
+  font-size: 0.875em;
+  white-space: pre;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+    border-radius: 12px 12px 0 0;
+    pointer-events: none;
+  }
 }
 
 code {
-  font-size:0.875em;
-  font-family:var(--font-code, var(--font-stack-code));
-  word-break:normal
+  font-size: 0.875em;
+  font-family: var(--font-code, var(--font-stack-code));
+  word-break: normal;
 }
 
 pre code {
-  font-size:inherit
+  font-size: inherit;
+  position: relative;
+  z-index: 1;
 }
 
 /* inline code */
 code.highlighter-rouge {
-  border-radius:3px;
-  padding:1px 5px;
-  background-color:var(--color-code)
+  border-radius: 6px;
+  padding: 3px 8px;
+  background: var(--color-background-card);
+  color: var(--color-accent-tertiary);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  font-weight: 500;
 }
 
 .nt, .gh, .si, .se {
