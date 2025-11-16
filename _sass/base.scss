@@ -51,10 +51,11 @@
 html {
   scrollbar-color: #6366f1 #131829;
   scrollbar-width: thin;
+  width: 100%;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 70px;
   background: var(--color-background);
@@ -64,6 +65,10 @@ body {
   text-align: left;
   position: relative;
   overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::before {
     content: '';
@@ -86,6 +91,13 @@ body {
   display: block;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 main {
