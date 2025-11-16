@@ -1,0 +1,102 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/sam/Code/lifegrid-theme/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+.active	_sass/nav.scss	/^    &.active {$/;"	c
+.active	_sass/nav.scss	/^  &.active {$/;"	c
+.c	_sass/code.scss	/^.c, .cm, .cp, .c1 {$/;"	c
+.c1	_sass/code.scss	/^.c, .cm, .cp, .c1 {$/;"	c
+.caps:first-letter	_sass/util.scss	/^.caps:first-letter {$/;"	c
+.caution	_sass/elements.scss	/^.caution {$/;"	c
+.caution	_sass/elements.scss	/^.tip, .note, .caution, .version {$/;"	c
+.caution:before	_sass/elements.scss	/^.caution:before {$/;"	c
+.cm	_sass/code.scss	/^.c, .cm, .cp, .c1 {$/;"	c
+.cp	_sass/code.scss	/^.c, .cm, .cp, .c1 {$/;"	c
+.dl	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.footer-bottom	_sass/footer.scss	/^  .footer-bottom {$/;"	c
+.footer-bottom	_sass/footer.scss	/^.footer-bottom {$/;"	c
+.footer-column	_sass/footer.scss	/^.footer-column {$/;"	c
+.footer-container	_sass/footer.scss	/^  .footer-container {$/;"	c
+.footer-container	_sass/footer.scss	/^.footer-container {$/;"	c
+.footer-links	_sass/footer.scss	/^  .footer-links a:hover {$/;"	c
+.footer-links	_sass/footer.scss	/^.footer-links {$/;"	c
+.ge	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.gh	_sass/code.scss	/^.nt, .gh, .si, .se {$/;"	c
+.gs	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.highlighter-rouge	_sass/code.scss	/^code.highlighter-rouge {$/;"	c
+.il	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.k	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.kc	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.kd	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.kn	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.kp	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.kr	_sass/code.scss	/^.k, .kd, .kn, .kp, .kr, .ge {$/;"	c
+.kt	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.love	_sass/util.scss	/^.love {$/;"	c
+.m	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mb	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mf	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mh	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mi	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mo	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.mx	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.na	_sass/code.scss	/^.na {$/;"	c
+.nav-container	_sass/nav.scss	/^  .nav-container {$/;"	c
+.nav-container	_sass/nav.scss	/^.nav-container {$/;"	c
+.nav-hamburger	_sass/nav.scss	/^  .nav-hamburger {$/;"	c
+.nav-hamburger	_sass/nav.scss	/^.nav-hamburger {$/;"	c
+.nav-link	_sass/nav.scss	/^  .nav-link {$/;"	c
+.nav-link	_sass/nav.scss	/^.nav-link {$/;"	c
+.nav-logo	_sass/nav.scss	/^  .nav-logo {$/;"	c
+.nav-logo	_sass/nav.scss	/^.nav-logo {$/;"	c
+.nav-menu	_sass/nav.scss	/^  #nav-toggle:checked ~ .nav-menu {$/;"	c
+.nav-menu	_sass/nav.scss	/^  .nav-menu {$/;"	c
+.nav-menu	_sass/nav.scss	/^.nav-menu {$/;"	c
+.nb	_sass/code.scss	/^.nb {$/;"	c
+.nc	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.nd	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.nf	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.nl	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.nn	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.no	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.note	_sass/elements.scss	/^.note {$/;"	c
+.note	_sass/elements.scss	/^.tip, .note, .caution, .version {$/;"	c
+.note:before	_sass/elements.scss	/^.note:before {$/;"	c
+.nt	_sass/code.scss	/^.nt, .gh, .si, .se {$/;"	c
+.nv	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.nx	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.o	_sass/code.scss	/^.o {$/;"	c
+.py	_sass/code.scss	/^.kc, .m, .mf, .mh, .mi, .il, .mo, .mx, .mb, .nv, .kt, .nd, .gs, .py, .no {$/;"	c
+.s	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.s1	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.s2	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.sb	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.sc	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.se	_sass/code.scss	/^.nt, .gh, .si, .se {$/;"	c
+.si	_sass/code.scss	/^.nt, .gh, .si, .se {$/;"	c
+.site-footer	_sass/footer.scss	/^  .site-footer {$/;"	c
+.site-footer	_sass/footer.scss	/^.site-footer {$/;"	c
+.sr	_sass/code.scss	/^.dl, .s, .s1, .s2, .sb, .sc, .nl, .sr {$/;"	c
+.ss	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.sx	_sass/code.scss	/^.nx, .nf, .nn, .nc, .ss, .sx {$/;"	c
+.tip	_sass/elements.scss	/^.tip {$/;"	c
+.tip	_sass/elements.scss	/^.tip, .note, .caution, .version {$/;"	c
+.tip:before	_sass/elements.scss	/^.tip:before {$/;"	c
+.top-nav	_sass/nav.scss	/^.top-nav {$/;"	c
+.version	_sass/elements.scss	/^.tip, .note, .caution, .version {$/;"	c
+.version	_sass/elements.scss	/^.version {$/;"	c
+.version:before	_sass/elements.scss	/^.version:before {$/;"	c
+.wrapper	_sass/base.scss	/^.wrapper {$/;"	c
+.wrapper-content	_sass/base.scss	/^  .wrapper-content {$/;"	c
+.wrapper-content	_sass/base.scss	/^.wrapper-content {$/;"	c
+markdown-toc	_sass/elements.scss	/^#markdown-toc {$/;"	i
+markdown-toc:before	_sass/elements.scss	/^#markdown-toc:before {$/;"	i
+nav-toggle	_sass/nav.scss	/^#nav-toggle {$/;"	i
+nav-toggle:checked	_sass/nav.scss	/^  #nav-toggle:checked ~ .nav-menu {$/;"	i
