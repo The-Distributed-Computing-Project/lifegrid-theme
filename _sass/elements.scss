@@ -98,8 +98,14 @@ tr:hover {
 img {
   margin-bottom: 1rem;
   max-width: 100%;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
+}
+
+/* For regular photos/screenshots that benefit from border radius */
+img[src*=".jpg"],
+img[src*=".jpeg"],
+img[src*="screenshot"] {
   border-radius: 12px;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
 }
 
 hr {
