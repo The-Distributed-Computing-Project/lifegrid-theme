@@ -49,33 +49,4 @@
   {%- if site.enable_custom -%}
   <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   {%- endif -%}
-  <script type="text/javascript">
-    function setModifiedDate() {
-      if (document.getElementById('last-modified')) {
-        fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?sha={{ site.github.branch }}&path={{ page.path }}")
-          .then((response) => {
-            return response.json();
-          })
-          .then((commits) => {
-            var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-            if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
-              document.getElementById('last-modified').innerHTML = "Last Modified: <b>" + modified + "</b>";
-              document.getElementById('last-modified').href = commits[0]["html_url"];
-              var editTime = Date.parse(modified);
-              var thDays = 1000 * 60 * 60 * 24 * 3;
-              var threeDaysAgo = Date.now() - thDays;
-              if(editTime>threeDaysAgo){
-                console.log("Page recently updated, showing banner");
-                document.getElementById("recently-updated").style.display = 'block';
-                document.getElementById("recently-updated-link").innerHTML = "This page was recently updated on <b>" + modified + "</b>. <u>Click this banner to view the relevant changes</u>";
-                document.getElementById("recently-updated-link").href = commits[0]["html_url"];
-              }
-            }
-          });
-      }
-      if(document.getElementById('footer_edit_button')){
-        document.getElementById('footer_edit_button').href = "https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/edit/{{ site.github.branch }}/{{ page.path }}";
-      }
-    }
-  </script>
 </head>

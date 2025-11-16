@@ -5,10 +5,9 @@ layout: compress
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body onload="setModifiedDate();">
+  <body>
     {% include nav.html %}
     <div class="wrapper wrapper-content">
-      <p class="caps version" id="recently-updated" style="display: none;"><a id="recently-updated-link" style="color:var(--color-text);"></a></p>
       <main>{{ content }}</main>
       {% include footer.html %}
     </div>
