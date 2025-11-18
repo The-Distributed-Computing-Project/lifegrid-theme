@@ -24,7 +24,7 @@
       {%- assign nav_pages = titled_pages | where_exp: "item", "item.nav_order != nil" | sort: "nav_order" -%}
 
       {%- for node in nav_pages -%}
-      <a href="{{ node.url | absolute_url }}" class="nav-link {% if node.title == page.title %}active{% endif %}">{{ node.title }}</a>
+      <a href="{{ node.url | absolute_url }}" class="nav-link {% if node.title == page.title %}active{% endif %}{% if node.nav_highlight %} nav-highlight{% endif %}">{{ node.title }}</a>
       {%- endfor -%}
     </div>
   </div>
