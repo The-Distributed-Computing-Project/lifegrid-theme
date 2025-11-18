@@ -50,5 +50,11 @@
   <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   {%- endif -%}
 
-  {{ head_extra }}
+  {%- if site.head_extra -%}
+  {{ site.head_extra }}
+  {%- endif -%}
+  {%- if page.head_extra -%}
+  {{ page.head_extra }}
+  {%- endif -%}
+
 </head>
