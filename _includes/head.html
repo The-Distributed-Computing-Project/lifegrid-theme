@@ -1,4 +1,11 @@
 <head>
+  {%- if site.head_extra -%}
+  {{ site.head_extra }}
+  {%- endif -%}
+  {%- if page.head_extra -%}
+  {{ page.head_extra }}
+  {%- endif -%}
+
   {%- capture title -%}{{ page.title }} | {{ site.title }}{%- endcapture -%}
   {%- if site.enable_versions == true and page.version != nil -%}
   {%- capture version -%}({{ page.version }}){%- endcapture -%}
@@ -49,12 +56,4 @@
   {%- if site.enable_custom -%}
   <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   {%- endif -%}
-
-  {%- if site.head_extra -%}
-  {{ site.head_extra }}
-  {%- endif -%}
-  {%- if page.head_extra -%}
-  {{ page.head_extra }}
-  {%- endif -%}
-
 </head>
