@@ -9,6 +9,7 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	//
+.active	_sass/nav.scss	/^      &.active {$/;"	c
 .active	_sass/nav.scss	/^    &.active {$/;"	c
 .active	_sass/nav.scss	/^  &.active {$/;"	c
 .c	_sass/code.scss	/^.c, .cm, .cp, .c1 {$/;"	c
@@ -52,6 +53,8 @@
 .nav-container	_sass/nav.scss	/^.nav-container {$/;"	c
 .nav-hamburger	_sass/nav.scss	/^  .nav-hamburger {$/;"	c
 .nav-hamburger	_sass/nav.scss	/^.nav-hamburger {$/;"	c
+.nav-highlight	_sass/nav.scss	/^    &.nav-highlight {$/;"	c
+.nav-highlight	_sass/nav.scss	/^  &.nav-highlight {$/;"	c
 .nav-link	_sass/nav.scss	/^  .nav-link {$/;"	c
 .nav-link	_sass/nav.scss	/^.nav-link {$/;"	c
 .nav-logo	_sass/nav.scss	/^  .nav-logo {$/;"	c

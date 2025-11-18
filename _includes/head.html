@@ -49,4 +49,6 @@
   {%- if site.enable_custom -%}
   <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
   {%- endif -%}
+
+  {{ head_extra }}
 </head>
